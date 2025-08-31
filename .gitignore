@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data
+data/raw/
+data/processed/*.csv   # Optional: you can include or ignore processed CSV
+
+# Model files
+models/*.joblib
+
+# OS files
+.DS_Store
+Thumbs.db

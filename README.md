@@ -29,16 +29,16 @@ Key highlights:
 ```
 Predict_CreditApproval/
 ├─ data/
-│ └─ processed/ # Cleaned dataset for modeling
+│ └─ processed/                   # Cleaned dataset for modeling
 ├─ notebooks/
-│ ├─ 01_data_cleaning.ipynb # Data cleaning and preprocessing
-│ └─ 02_modeling.ipynb # Model training and evaluation
+│ ├─ 01_data_cleaning.ipynb       # Data cleaning and preprocessing
+│ └─ 02_modeling.ipynb            # Model training and evaluation
 ├─ src/
-│ ├─ model.py # Functions to load, predict, and evaluate model
+│ ├─ model.py                     # Functions to load, predict, and evaluate model
 ├─ models/
 │ └─ logistic_credit_model.joblib # Trained Logistic Regression model
-├─ main.py # Run the full pipeline
-├─ requirements.txt # Project dependencies
+├─ main.py                        # Run the full pipeline
+├─ requirements.txt               # Project dependencies
 └─ README.md
 ```
 ---
@@ -62,6 +62,8 @@ venv\Scripts\activate     # Windows
 Install dependencies:
 pip install -r requirements.txt
 ```
+---
+
 ## 🧹 Data Preprocessing
 The project uses the Credit Approval dataset from UCI repository.
 **Steps performed in 01_data_cleaning.ipynb:**
@@ -71,6 +73,8 @@ The project uses the Credit Approval dataset from UCI repository.
 - Encode categorical features and target variable (class)
 - Scale features using StandardScaler
 - Save cleaned dataset to data/processed/credit_approval_processed.csv
+
+---
 
 ## 🤖 Model Training
 
@@ -85,6 +89,8 @@ The project uses the Credit Approval dataset from UCI repository.
   - Trained model is saved as:
 **models/logistic_credit_model.joblib**
 
+---
+
 ## ⚡ Running the Pipeline
 
 Run the full pipeline using:
@@ -97,6 +103,8 @@ This will:
 - Make predictions
 - Print evaluation metrics
 
+---
+
 ## 📊 Model Evaluation
 Sample metrics on the dataset:
 **Metric	Score**
@@ -106,17 +114,23 @@ Sample metrics on the dataset:
 - F1 Score	0.90
 (Values may vary slightly depending on train-test split)
 
+---
+
 ## 📝 Notes
 SMOTE (data balancing) is optional and not included to avoid compatibility issues.  
 You can extend the project with other ML models or deploy it via Flask/FastAPI.  
 Original raw dataset is not included in the repo; it is fetched using ucimlrepo in the notebook.  
+
+---
 
 ## 🔗 References
 **UCI Credit Approval DatasetDataset:** [UCI Credit Approval Dataset](https://archive.ics.uci.edu/ml/datasets/credit+approval)  
 **scikit-learn Documentation:** [scikit-learn Documentation](https://scikit-learn.org/stable/)  
 **imbalanced-learn Documentation:** [imbalanced-learn Documentation](https://imbalanced-learn.org/stable/)  
 
-## 🙋‍♀️ Author
+---
+
+##  Author
 
 👩 **Amina Parveen**  
 📧 **Contact:** [LinkedIn](https://www.linkedin.com/in/amina-parveen-9606182a2)  
@@ -125,5 +139,3 @@ Original raw dataset is not included in the repo; it is fetched using ucimlrepo 
 ---
 
 ✨ *This project is for learning and academic purposes only.*
-
-
